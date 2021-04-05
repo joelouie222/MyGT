@@ -1,0 +1,23 @@
+﻿@model Profile
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title> EDIT PROFILE </title>
+</head>
+<body>
+    <form method="post">
+        <div>First Name: <input asp-for="FName" placeholder="First Name" /></div>
+        <div>Last Name: <input asp-for="LName" placeholder="Last Name" /></div>
+        <div>Address: <input asp-for="Address" placeholder="Address" /> </div>
+        <div>Age: <input asp-for="Age" placeholder="Age" /></div>
+        <div>Phone Number: <input asp-for="PhoneNumber" placeholder="Phone Number" /></div>
+        <div>Email Address: <input asp-for="EmailAddress" placeholder="Email Address" /></div>
+        <button action="submit"> Submit </button>
+        <button action="reset"> Clear </button>
+    </form>
+</body>
+</html>

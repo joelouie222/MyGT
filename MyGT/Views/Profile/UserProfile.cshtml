@@ -1,0 +1,56 @@
+﻿@model Profile
+
+@{
+    
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="UTF-8">
+        <link href="~/css/Styles.css" rel="stylesheet" />
+        <title> My Profile </title>
+    </head>
+
+    <body>        
+        <div class="heading">
+            <h1 style=""><strong>My Profile</strong></h1>
+        </div>     
+        
+        <table class="table" style="font-size:45px">
+            <br/>
+            <tr>
+                <td class="table-cell"> First Name: </td>
+                <td class="table-cell"> @Model.FName</td>
+            </tr>
+            <tr>
+                <td class="table-cell"> Last Name: </td>
+                <td class="table-cell"> @Model.LName</td>
+            </tr>
+            <tr>
+                <td class="table-cell"> Email Address: </td>
+                <td class="table-cell"> @Model.EmailAddress </td>
+            </tr>
+            <tr>
+                <td class="table-cell"> Address: </td>
+                <td class="table-cell"> @Model.Address </tdclass="table-cell">
+            </tr>
+            <tr>
+                <td class="table-cell"> Phone number: </td>
+                <td class="table-cell"> @Model.PhoneNumber </td>
+            </tr>
+            <tr>
+                <td class="table-cell"> Age:  </td>
+                <td class="table-cell"> @Model.Age </td>
+            </tr>
+            <tr>
+                <td class="table-cell"> UserID:  </td>
+                <td class="table-cell"> @Model.Id </td>
+            </tr>
+        </table>
+
+
+        <a asp-controller="Profile" asp-action="EditProfile"><button>Edit Profile</button></a>
+    </body>
+</html>
+

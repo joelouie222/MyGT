@@ -1,0 +1,37 @@
+﻿.heading {
+    background-color: lightblue;
+    width: 100%;
+    font-size: 100px;
+    height: 100px;
+    align-items: center;
+}
+
+.table {
+    background-color: deepskyblue;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    border: 1px solid;
+}
+
+.table-cell {
+    border: 1px solid;
+}
+
+.button-register {
+    background-color: Blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.button-login {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+}
